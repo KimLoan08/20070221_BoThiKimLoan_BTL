@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- <script src="js/dangky.js"></script> -->
+    <script>
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            })
+
+            function kiemtraTDN() {
+                let mauKT = /^[A-Z0-9][a-z0-9]*(\s[A-Z0-9][a-z0-9]*)*$/;
+                if ($("#txtTDN").val() == "") {
+                    $("#tbTDN").html("Không để trống.");
+                    return false;
+                }
+                if (!mauKT.test($("#txtTDN").val())) {
+                    $("#tbTDN").html("Mỗi ký tự đầu viết hoa, không dùng số");
+                    return true;
+                }
+                $("#tbTDN").html("(*)");
+                return true;
+            }
+            $("#txtTDN").blur(kiemtraTDN);
+
+            function kiemtraHT() {
+                let KTHT = /^([A-Z]{1}[a-z]+)((\s{1}[A-Z]{1}[a-z]+){1,})$/;
+                if ($("#txtHT").val() == "") {
+                    $("#tbHT").html("Không để trống.");
+                    return false;
+                }
+                if (!KTHT.test($("#txtHT").val())) {
+                    $("#tbHT").html("Mỗi ký tự đầu viết hoa và không dùng số.");
+                    return true;
+                }
+                $("#tbHT").html("(*)");
+                return true;
+            }
+            $("#txtHT").blur(kiemtraHT);
+
+            function kiemtraMK() {
+                let KTMK = /^(?=.*\d).{6,}$/;
+                if ($("#txtMK").val() == "") {
+                    $("#tbMK").html("Không để trống.");
+                    return false;
+                }
+                if (!KTMK.test($("#txtMK").val())) {
+                    $("#tbMK").html("Bắt buộc nhập.");
+                    return true;
+                }
+                $("#tbMK").html("(*)");
+                return true;
+            }
+            $("#txtMK").blur(kiemtraMK);
+
+            function kiemtraXNMK() {
+                if ($("#txtXNMK").val() != $("#txtMK").val()) {
+                    $("#tbXNMK").html("Phải giống ô mật khẩu!");
+                    return false;
+                }
+                // if ($("#txtXNMK").val() == $("#txtMK").val()) {
+                //     $("#tbXNMK").html("Bạn đã nhập đúng!");
+                //     return true;
+                // }
+                $("#tbXNMK").html("(*)");
+                return true;
+            }
+            $("#txtXNMK").blur(kiemtraXNMK);
+
+            $("#btnSubDK").click(function() {
+                if (!kiemtraTDN() || !kiemtraHT() || !kiemtraMK() || !kiemtraXNMK()) {
+                    $("#thongbao").html("Mời bạn nhập đầy đủ thông tin!")
+                    return false;
+                }
+                $("#myModal").modal("hide");
+                return true;
+            })
+
+        })
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-md-12">
+            <nav class="navbar-collapse">
+                <ul class="navbar-nav nav">
+                    <li><a href="#" id="myBtn">Đăng ký</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 style="text-align: center; color: brown;">THÔNG TIN ĐĂNG KÝ</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                                <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtTDN" class="control-label col-xs-4">Tên đăng nhập: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtTDN">
+                                    <span id="tbTDN" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtHT" class="control-label col-xs-4">Họ tên: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtHT">
+                                    <span id="tbHT" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtGT" class="control-label col-xs-4">Giới tính: </label>
+                                <div class="col-md-8">
+                                    <input type="radio" id="radNam" name="gioiTinh" value="Nam"> <label for="Nam">Nam</label>
+                                    <input type="radio" id="radNu" name="gioiTinh" value="Nữ"> <label for="Nu">Nữ</label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtMK" class="control-label col-xs-4">Mật khẩu: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtMK">
+                                    <span id="tbMK" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtXNMK" class="control-label col-xs-4">Nhập lại mật khẩu: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtXNMK">
+                                    <span id="tbXNMK" class="text-danger">(*)</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtSDT" class="control-label col-xs-4">Số điện thoại: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtSDT">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtEmail" class="control-label col-xs-4">Email: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtEmail">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="txtDC" class="control-label col-xs-4">Địa chỉ: </label>
+                                <div class="col-md-8">
+                                    <input type="text" class="form-control" id="txtDC">
+                                </div>
+                            </div>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" id="btnSubDK" class="btn btn-warning">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,223 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Main {
+    width: 1200px;
+    background-color: bisque;
+}
+/*MENU - BY CSS*/
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: #197a48;
+    padding: 7px;
+    text-align: left;
+    text-indent: 10px;
+    
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li:hover ul {
+    position: absolute;
+    
+}
+.c1 {
+    list-style: none;
+    display: flex;
+    float: left;
+}
+
+.c1 a {
+    list-style: none;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    background-color: #197a48;
+    color: white;
+    padding: 8px 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+}
+.c1 a:hover{
+    color: rgb(37, 46, 53);
+    list-style: none;
+    text-decoration: none;
+}
+
+.c1 .c14 a {
+    width: 250px;
+    
+}
+
+.c1 .c12 a{
+    width: 150px;
+}
+
+.c2 li {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+
+.c12:hover .c2 li, .c13:hover .c2 li, .c14:hover .c2 li {
+    display: block;
+}
+
+.c12:hover .c2 li a, .c13:hover .c2 li a, .c14:hover .c2 li a {
+    background-color: #197a48;
+    padding: 10px 20px;
+}
+
+/*IconLogin*/
+.Login-group .h4{
+    font-size: 17px; 
+    font-weight: bold;
+    position: absolute;
+    margin-left: 84%;
+    margin-top: 10px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+.icon-group {
+    position: relative;
+    float: right;
+}
+.icon-head{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -43px;
+    margin-top: 2px;
+}
+.icon-body{
+    position: absolute;
+    width: 28px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50% 50% 0  0;
+    margin-top: 17px;
+    margin-left: -50px;
+}
+
+
+/* Nút đăng ký*/
+.input-form {
+    margin-bottom: 20px;
+   
+}
+
+.input-form span {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: inline-block;
+    color: #197a48;
+    letter-spacing: 1px;
+}
+
+.input-form input {
+    float: right;
+    margin-right: 20px;
+    width: 150px;
+    padding: 10px 16px;
+    outline: none;
+    border: 1px solid #197a48;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    color: #197a48;
+    background: transparent;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-form input[type="submit"] {
+    background: #197a48;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12);
+}
+.container {
+    width: 100%;
+}
+
+/*SECTION*/
+section {
+    width: 100%;
+    height: 450px;
+    background-color: white;
+}
+
+section .noi-dung {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+}
+
+
+section .noi-dung .form h2 {
+    color: #3d4f58;
+    font-weight: 500;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 20px;
+    display: inline-block;
+    letter-spacing: 1px;
+}
+
+
+section .noi-dung .form .form-group button{
+    border-radius: 30px;
+    width: 100%;
+    box-shadow: 2px 2px 10px 1px #49926d;
+    background-color: #197a48
+}
+section .noi-dung .form .form-group span{
+    font-size: 15px;
+    font-style: italic;
+}
+
+/*IconLogin*/
+.Login-group .h4{
+    font-size: 17px; 
+    font-weight: bold;
+    position: absolute;
+    margin-left: 80%;
+    margin-top: 10px;
+    color: white;
+}
+.icon-group {
+    position: relative;
+    float: right;
+}
+.icon-head{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: -41px;
+    margin-top: 2px;
+}
+.icon-body{
+    position: absolute;
+    width: 28px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50% 50% 0  0;
+    margin-top: 17px;
+    margin-left: -48px;
+}

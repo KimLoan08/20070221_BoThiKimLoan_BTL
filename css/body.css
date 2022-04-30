@@ -1,0 +1,31 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Main {
+    width: 1200px;
+    background-color: bisque;
+}
+
+
+
+
+/* Button*/
+.btIn {
+    margin-left: 10px;
+    width: 200px;
+    padding: 10px;
+    background-color: #76bdf7;
+    border-color: #2e6aa5;
+    color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent font-size 500%;
+    box-shadow: gray;
+}
+
+
+

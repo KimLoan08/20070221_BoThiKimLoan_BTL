@@ -1,0 +1,158 @@
+* {
+    margin: 0px auto;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Main {
+    width: 1200px;
+    background-color: bisque;
+}
+
+section {
+    width: 100%;
+    height: 1000px;
+    background-color: white;
+}
+/*SECTION LEFT*/
+.section_left {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    text-indent: 10px;
+    color: black;
+}
+
+.section_left div {
+    padding: 2%;
+    text-align: left;
+}
+
+.sec_left_top fieldset{
+    border: 1px solid green;
+    padding: 5%;
+}
+
+.sec_left_top img{
+    width: 40%;
+    height: 80%;
+    float: left;
+}
+.sec_left_top h3{
+    color: black;
+    font-size: 25px;
+    margin: 2%;
+    text-align: left;
+}
+.sec_left_top table h3{
+    width: 400px;
+    float: left;
+    padding: 10px;
+}
+.sec_left_top .btn{
+    float: left;
+    margin-left: 30px;
+}
+
+
+.sec_left_top h2{
+    color: red;
+    text-align: left;
+    float: left;
+    margin: 5%;
+    margin-left: 10%;
+}
+.sec_left_top button{
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 5%;
+    margin-right: 15px;
+    border: 0;
+}
+.sec_left_top .btnThem{
+    background-color: rgb(253, 70, 70);
+    color: white;
+}
+.sec_left_top .btnThem:hover{
+    background-color: red;
+}
+.sec_left_top .btnDat:hover{
+    background-color: #d4d4d4;
+}
+
+.sec_left_bot fieldset{
+    height: 360px;
+    margin-top: -30px;
+}
+
+.sec_left_bot .content{
+    line-height: 25px;
+}
+
+.sec_left_bot .content .nd{
+    clear: both;
+    margin-top: -50px;
+    margin-left: 20px;
+}
+
+.section_left .soLuong{
+    float: left;
+    margin-left: 50px;
+    
+}
+.soLuong input{
+    clear: both;
+    border-radius: 0;
+    border: 1px solid gray;
+    /* padding-top: 10px; */
+    padding: 10px 5px 0 5px;
+}
+.soLuong button{
+    clear: both;
+    border: 1px solid gray;
+    border-radius: 0;
+    padding: 15px;
+    margin-left: -5px ;
+    margin-right: -5px;
+    
+}
+
+
+/*SECTION RIGHT*/
+.section_right{
+    width: 25%;
+    height: 100%;
+    background-color: #E6E6FA;
+    float: left;
+    padding-top: 5px;
+    text-align: left;
+    text-indent: 10px;
+}
+
+.section_right fieldset {
+    padding: 10px 5px;
+    border: 0;
+}
+
+.txtSearch {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+}
+
+.btnSearch {
+    width: 20%;
+    height: 40px;
+    background-color: #197a48;
+    color: cornsilk;
+    border-radius: 10px;
+}
+
+
+

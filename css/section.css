@@ -1,0 +1,155 @@
+/*SECTION*/
+section {
+    width: 100%;
+    height: 2000px;
+    /* height: 1860px; */
+    background-color: white;
+}
+
+.section_left {
+    width: 100%;
+    height: 100%;
+    float: left;
+    text-align: left;
+    text-indent: 10px;
+    color: black;
+}
+
+/* .section_right{
+    width: 25%;
+    height: 100%;
+    background-color: #E6E6FA;
+    float: left;
+    padding-top: 5px;
+    text-align: left;
+    text-indent: 10px;
+} */
+
+section a:link {
+    color: black;
+    text-decoration: none;
+
+}
+section h2 a:link{
+    text-transform: uppercase;
+}
+
+section a:visited {
+    color: black;
+}
+
+section a:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+/*SECTION RIGHT*/
+.section_right fieldset {
+    padding: 10px 5px;
+    border: 0;
+}
+
+.txtSearch {
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    padding: 5px;
+}
+
+.btnSearch {
+    width: 20%;
+    height: 40px;
+    background-color: #197a48;
+    color: cornsilk;
+}
+
+/*SECTION LEFT*/
+.section_left div {
+    padding: 2%;
+    text-align: center;
+}
+
+.section_left .more {
+    float: right;
+    font-size: 20px;
+}
+
+.section_left .more a {
+    text-transform: none;
+}
+
+.sec_anhChoMeo_1{
+    height: 280px;
+    margin: 0%;
+}
+.sec_anhChoMeo_2 {
+    height: 800px;
+    margin: 0%;
+}
+.sec_anhChoMeo_2 img {
+    width: 100%;
+    height: 260px;
+    float: left;
+    margin-top: -80px;
+}
+
+.sec_anhChoMeo_1 img{
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.sec_sanPhamBanChay, .sec_thucPhamBoSung {
+
+    height: 550px;
+}
+
+.sec_sanPhamBanChay fieldset, .sec_thucPhamBoSung fieldset {
+    width: 23%;
+    height: 360px;
+    float: left;
+    margin: 1%;
+    border: 0;
+    box-shadow: 0 0 5px 1px rgb(194, 193, 193);
+
+    padding: 1%;
+    text-align: left;
+
+    border-radius: 20px;
+}
+
+.sec_sanPhamBanChay img, .sec_thucPhamBoSung img {
+    width: 90%;
+    height: 65%;
+    margin-bottom: 0px;
+}
+
+.sec_thanhVien {
+    background-color: #197a48;
+    color: white;
+    height: 400px;
+}
+
+.sec_thanhVien h2 a{
+    color: white;
+}
+.sec_thanhVien h2 a:hover{
+    color: bisque;
+}
+.sec_thanhVien img {
+    width: 380px;
+    height: 380px;
+    float: left;
+    margin-right: 20px;
+}
+.sec_thanhVien .TV_GioiThieu{
+    text-align: left;
+    line-height: 25px;
+    
+}
+.sec_thanhVien .TV_GioiThieu h2{
+    text-align: center;
+    margin-bottom: 30px;
+}

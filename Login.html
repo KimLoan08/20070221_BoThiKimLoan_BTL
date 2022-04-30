@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Đăng nhập</title>
+    <!-- <link rel="stylesheet" href="css/menu.css"> -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/sanPhamBanChay.css">
+    <link rel="stylesheet" href="css/testLogin.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <script src="js/dangky.js"></script>
+    <script src="js/login.js"></script>
+
+</head>
+
+<body>
+    <div class="Main">
+        <header>
+            <figure>
+                <img src="image/title.png" alt="Error">
+            </figure>
+        </header>
+
+        <nav>
+            <ul class="c1">
+                <li><a href="html/Body.html">Trang chủ</a></li>
+                <li class="c12"><a href="html/GioiThieu_Web.html">Giới thiệu</a>
+                    <ul class="c2">
+                        <li><a href="#">Website</a></li>
+                        <li><a href="html/SiteMap.html">SiteMap</a></li>
+                    </ul>
+                </li>
+                <li class="c13"><a href="html/SanPhamBanChay.html">Sản phẩm</a>
+                    <ul class="c2">
+                        <li><a href="html_SamPham/SP_Cho.html">Cho chó</a></li>
+                        <li><a href="html_SamPham/SP_Meo.html">Cho mèo</a></li>
+                    </ul>
+                </li>
+                <li class="c14"><a href="html/ThucPhamBoSung.html">Thực phẩm bổ sung</a>
+                    <ul class="c2">
+                        <li><a href="html_ThucPham/TP_Cho.html">Dành cho chó</a></li>
+                        <li><a href="html_ThucPham/TP_Meo.html">Dành cho mèo</a></li>
+                    </ul>
+                </li>
+                <li class="c14"><a href="html/GioiThieu.html">SV Thực hiện</a></li>
+            </ul>
+            <div class="Login-group">
+                <a href="#" id="myBtn">
+                    <div class="h4">
+                        ĐĂNG KÝ
+                    </div>
+                    <div class="icon-group">
+                        <div class="icon-head"></div>
+                        <div class="icon-body"></div>
+                    </div>
+                </a>
+            </div>
+        </nav>
+
+        <section>
+            <div class="noi-dung">
+                <div class="form">
+                    <h2>Trang Đăng Nhập</h2>
+                    <form action="">
+                        <div class="form-group">
+                            <label for="txtUser" class="">Tên đăng nhập
+                                <span class="font-italic text-danger">(*)</span>
+                            </label>
+                            <input type="text" id="txtUser" class=" form-control">
+                            <span id="errUser" class="font-italic text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtPass" class="">Mật khẩu:
+                                <span class="font-italic text-danger">(*)</span>
+                            </label>
+                            <input type="password" id="txtPass" class=" form-control">
+                            <span id="errPass" class="font-italic text-danger"></span>
+                        </div>
+                        <div class="form-group">
+                            <button id="BtnDangNhap" class="btn btn-success">Đăng Nhập</button>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-form">
+                                <p>Bạn Chưa Có Tài Khoản? <a href="#">Đăng Ký</a></p>
+                            </div>
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <div class="container">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <h4 style="text-align: center; color: brown;">THÔNG TIN ĐĂNG KÝ</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form role="form" class="form-horizontal">
+                                    <div class="form-group">
+                                        <div id="thongbao" class="text-danger" style="text-align: center;"></div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtTDN" class="control-label col-xs-4">Tên đăng nhập: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtTDN">
+                                            <span id="tbTDN" class="text-danger">(*)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtHT" class="control-label col-xs-4">Họ tên: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtHT">
+                                            <span id="tbHT" class="text-danger">(*)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtGT" class="control-label col-xs-4">Giới tính: </label>
+                                        <div class="col-md-8">
+                                            <input type="radio" id="radNam" name="gioiTinh" value="Nam"> <label for="Nam">Nam</label>
+                                            <input type="radio" id="radNu" name="gioiTinh" value="Nữ"> <label for="Nu">Nữ</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtMK" class="control-label col-xs-4">Mật khẩu: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtMK">
+                                            <span id="tbMK" class="text-danger">(*)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtXNMK" class="control-label col-xs-4">Nhập lại mật khẩu: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtXNMK">
+                                            <span id="tbXNMK" class="text-danger">(*)</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtSDT" class="control-label col-xs-4">Số điện thoại: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtSDT">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtEmail" class="control-label col-xs-4">Email: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtEmail">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="txtDC" class="control-label col-xs-4">Địa chỉ: </label>
+                                        <div class="col-md-8">
+                                            <input type="text" class="form-control" id="txtDC">
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" id="btnSubDK" class="btn btn-warning">Đăng ký</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </div>
+</body>
+
+</html>
